@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Donas"/>
+        <attribute name="authors" value="diazv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-23 05:07:08 p. m."/>
+        <attribute name="created" value="ZGlhenY7REVTS1RPUC1KMVQzT0xKOzIwMjUtMDMtMjM7MDQ6NTQ6MDkgcC4gbS47MzA4Mw=="/>
+        <attribute name="edited" value="ZGlhenY7REVTS1RPUC1KMVQzT0xKOzIwMjUtMDMtMjM7MDU6MDc6MDggcC4gbS47MTszMTg5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="p" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingresa el n&#250;mero de donas a comprar(en un n&#250;mero entero):&quot;" newline="True"/>
+            <input variable="p"/>
+            <if expression="p&gt;=30">
+                <then>
+                    <if expression="p&gt;=50">
+                        <then>
+                            <assign variable="c" expression="p*8.0"/>
+                        </then>
+                        <else>
+                            <assign variable="c" expression="p*9.0"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="c" expression="p*10.0"/>
+                </else>
+            </if>
+            <output expression="&quot;Por las donas vas a pagar: &quot;" newline="False"/>
+            <output expression="c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
