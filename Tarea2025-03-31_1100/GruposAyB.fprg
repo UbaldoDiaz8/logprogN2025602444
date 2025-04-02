@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="GruposAyB"/>
+        <attribute name="authors" value="diazv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-31 05:23:03 p. m."/>
+        <attribute name="created" value="ZGlhenY7REVTS1RPUC1KMVQzT0xKOzIwMjUtMDMtMzE7MDU6MDE6MTggcC4gbS47MzA3NQ=="/>
+        <attribute name="edited" value="ZGlhenY7REVTS1RPUC1KMVQzT0xKOzIwMjUtMDMtMzE7MDU6MjM6MDMgcC4gbS47MTszMTgx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="l" type="String" array="False" size=""/>
+            <declare name="s" type="String" array="False" size=""/>
+            <output expression="&quot;Anota la inicial de tu nombre en may&#250;scula:&quot;" newline="True"/>
+            <input variable="l"/>
+            <output expression="&quot;Anota una M si eres mujer o una H si eres hombre&quot;" newline="True"/>
+            <input variable="s"/>
+            <if expression="s==&quot;M&quot;">
+                <then>
+                    <if expression="l==&quot;A&quot; or l==&quot;B&quot; or l==&quot;C&quot; or l==&quot;D&quot; or l==&quot;E&quot; or l==&quot;F&quot; or l==&quot;G&quot; or l==&quot;H&quot; or l==&quot;I&quot; or l==&quot;J&quot; or l==&quot;K&quot; or  l==&quot;L&quot;">
+                        <then>
+                            <output expression="&quot;Perteneces al grupo A&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Perteneces al grupo B&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="l==&quot;&#209;&quot; or l==&quot;O&quot; or l==&quot;P&quot; or l==&quot;Q&quot; or l==&quot;R&quot; or l==&quot;S&quot; or l==&quot;T&quot; or l==&quot;U&quot; or l==&quot;V&quot; or l==&quot;W&quot; or l==&quot;X&quot; or l==&quot;Y&quot; or l==&quot;Z&quot;">
+                        <then>
+                            <output expression="&quot;Perteneces al grupo A&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Perteneces al grupo B&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
