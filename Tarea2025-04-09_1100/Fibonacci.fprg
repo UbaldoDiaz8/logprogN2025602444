@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Fibonacci"/>
+        <attribute name="authors" value="diazv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 07:13:42 p. m."/>
+        <attribute name="created" value="ZGlhenY7REVTS1RPUC1KMVQzT0xKOzIwMjUtMDQtMDg7MDY6NTQ6NTIgcC4gbS47MzA4Nw=="/>
+        <attribute name="edited" value="ZGlhenY7REVTS1RPUC1KMVQzT0xKOzIwMjUtMDQtMDg7MDc6MTM6NDIgcC4gbS47MzszMTky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="m" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <assign variable="a" expression="0"/>
+            <assign variable="m" expression="1"/>
+            <output expression="&quot;&#191;Hasta que t&#233;rmino de la serie fibonacci quieres llegar?(sus primeros terminos son 1 y 2)&quot;" newline="True"/>
+            <input variable="c"/>
+            <while expression="c!=0">
+                <assign variable="m" expression="m+a"/>
+                <assign variable="a" expression="m-a"/>
+                <output expression="m" newline="False"/>
+                <if expression="c==1">
+                    <then>
+                        <output expression="&quot;.&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;, &quot;" newline="False"/>
+                    </else>
+                </if>
+                <assign variable="c" expression="c-1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

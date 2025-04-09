@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial"/>
+        <attribute name="authors" value="diazv"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 07:35:07 p. m."/>
+        <attribute name="created" value="ZGlhenY7REVTS1RPUC1KMVQzT0xKOzIwMjUtMDQtMDg7MDc6MDk6MTkgcC4gbS47MzA5MQ=="/>
+        <attribute name="edited" value="ZGlhenY7REVTS1RPUC1KMVQzT0xKOzIwMjUtMDQtMDg7MDc6MDk6NTEgcC4gbS47MTtkaWF6djtERVNLVE9QLUoxVDNPTEo7MjAyNS0wNC0wODswNjo1NDo1MiBwLiBtLjtGaWJvbmFjY2kuZnByZzs3Nzcx"/>
+        <attribute name="edited" value="ZGlhenY7REVTS1RPUC1KMVQzT0xKOzIwMjUtMDQtMDg7MDc6MzU6MDcgcC4gbS47MTszMTk1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="m" type="Integer" array="False" size=""/>
+            <declare name="p" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="0"/>
+            <assign variable="a" expression="1"/>
+            <assign variable="m" expression="0"/>
+            <assign variable="p" expression="0"/>
+            <output expression="&quot;Ingresa un n&#250;mero entero del que quieras obtener su factorial:&quot;" newline="True"/>
+            <input variable="c"/>
+            <assign variable="m" expression="c"/>
+            <assign variable="p" expression="c"/>
+            <while expression="c!=1">
+                <output expression="c" newline="False"/>
+                <assign variable="a" expression="p-1"/>
+                <assign variable="m" expression="m*a"/>
+                <assign variable="p" expression="p-1"/>
+                <assign variable="c" expression="c-1"/>
+                <if expression="c==1">
+                    <then>
+                        <output expression="&quot; * 1:&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot; * &quot;" newline="False"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="m" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
